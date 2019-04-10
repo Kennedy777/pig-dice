@@ -5,6 +5,7 @@ var rollDice = 0;
 var total = 0;
 var scorePlayer1 = 0;
 var scorePlayer2 = 0;
+
 //Rolling the dice
 function Roll(){
   rollDice = Math.floor((Math.random() * 6) + 1);
@@ -12,7 +13,7 @@ function Roll(){
 function Total(){
     if(rollDice === 1){
       total = 0;
-      alert("Oh no! You rolled a 1. Your turn is over. And you are awarded no points.")
+      alert("Oh no! You rolled a 1. Your turn is over and you are awarded no points.");
     } else {
       total += rollDice;
     }    
@@ -35,7 +36,14 @@ $(document).ready(function() {
     rollDice = 0;
     $("#rollOutput").html(total);
     $("#turnTotal").html(rollDice);
-  });
+    
+    if(scorePlayer1 >= 100) {
+    alert("YOU WIN!");
+    $("#rollOutput").html(total);
+    $("#turnTotal").html(total);
+  }
+});
+
   $("#player2").click(function(event) {
     scorePlayer2 += total;
     $("#score2").html(scorePlayer2);
@@ -43,6 +51,11 @@ $(document).ready(function() {
     rollDice = 0;
     $("#rollOutput").html(total);
     $("#turnTotal").html(total);
-  })
 
+    if(scorePlayer2 >= 100) {
+      alert("YOU WIN!");
+      $("#rollOutput").html(total);
+      $("#turnTotal").html(total);
+}
+});
 });
