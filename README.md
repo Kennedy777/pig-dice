@@ -15,47 +15,29 @@ The first player to score 100 or more points wins.
 
 
 ### Specs
-. Create a random number generator
-. Activate generator on "roll" click
-. Add each inputted number to form field, 
-. result added to running total on "end" click
-. rolling a 1 multipies entire field by 0 and ends turn;    score becomes 0 for that turn ONLY
-. At the end of turn, display the player's banked score + turn score in their column.
-. Scoreboard begins to caluculate the other player. 
-. Game ends when one user totals 100
-
-
-
 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
-| **Program Gathers User Input** | User input: "pants" | Output: "pants" |
-| **Program Removes Spaces from User Input**| User Input: "pants pants" | Output: "pantspants" |
-| **Program Removes Punctuation from User Input**| Input: "p#an^t@s  /p(ant%s" | Output: "pantspants" |
-| **Program Assigns Characters Numeric Values** | Input: "pants" | Output: "3 1 1 1 1" |
-| **Program Sums Character Values**| Input: "3 1 1 1 1" | Page Displays: 7 |
+| **Create a random number generator** | Click | Random number between 1 and 6 |
+| **Activate generator on "roll" click** | User input: Click | Output: Random number between 1 and 6 |
+| **Add each inputted number to second dice field**| User Input: Click | Output: total sum of rolled number |
+| **Result added to running total with End Turn button**| Input: Click | Output: Sum of rolls added to user score |
+| **Rolling a 1 returns 0 and ends turn; score becomes 0 for that turn ONLY** | Input: "1" (on click) | Output: "0" "alert: Your turn is over and you are awarded no points" |
+| **Round ends when one user wins by totaling 100 points **| Input: "100" | Page Displays alert: "YOU WIN!"  |
 
 ## Setup/Installation Requirements
 
-1. To run this program, you must have a C# compiler. I use [Mono](http://www.mono-project.com).
-2. Install the [Nancy](http://nancyfx.org/) framework to use the view engine. Follow the link for installation instructions.
-3. Clone this repository.
-4. Open the command line--I use PowerShell--and navigate into the repository. Use the command "dnx kestrel" to start the server.
-5. On your browser, navigate to "localhost:5004" and enjoy!
+1. Open browser
+2. Navigate to https://meyerclemon.github.io/pig_dice/.
+3. Enjoy!
 
 ## Known Bugs
 * No known bugs at this time.
 
 ## Technologies Used
-* C#
-  * Nancy framework
-  * Razor View Engine
-  * ASP.NET Kestrel HTTP server
-  * xUnit
-
-* HTML
-
+* JavaScript
+  * CSS
+  * HTML
 ## Support and contact details
 
 _Email no one with any questions, comments, or concerns._
@@ -64,4 +46,4 @@ _Email no one with any questions, comments, or concerns._
 
 *{This software is licensed under the MIT license}*
 
-Copyright (c) 2017 **_{Marilyn Carlin, David Wilson}_**
+Copyright (c) 2019 **_{Maya Frame, Marguerite Kennedy}_**

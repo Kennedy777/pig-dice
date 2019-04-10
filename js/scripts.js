@@ -1,5 +1,6 @@
 //Business end
 
+
 //Globals
 var rollDice = 0;
 var total = 0;
@@ -38,12 +39,12 @@ $(document).ready(function() {
     $("#turnTotal").html(rollDice);
     
     if(scorePlayer1 >= 100) {
-    alert("YOU WIN!");
-    $("#rollOutput").html(total);
-    $("#turnTotal").html(total);
+      alert("YOU WIN!");
+      $("#rollOutput").html(total);
+      $("#turnTotal").html(total);
   }
 });
-
+//Player 2
   $("#player2").click(function(event) {
     scorePlayer2 += total;
     $("#score2").html(scorePlayer2);
