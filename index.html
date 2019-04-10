@@ -11,30 +11,42 @@
     <div class="container">
       <div class="row">
         <div class="column-md-12">
-          <div id="roll-dice">
-          <h2>Click to roll</h2>
-            <button id="rollDice" type="submit" class="btn-primary">Roll</button>
-            <div id="rollOutput">
+          <div class="jumbotron">
+            <div id="roll-dice">
+              <h2>Click to roll</h2>
+              <button id="rollDice" type="submit" class="btn-primary">Roll</button>
+              <div id="rollOutput"></div>
+              <div id="turnTotal"></div>
             </div>
           </div>
-        </div>
         </div>
       </div>
       <div class="row">
         <div class="column-md-6">
-          <h2>Player 1</h2>
-          <div id="player1">
-            <button type="submit" class="btn-primary">End Turn</button>
-            <h4>Score</h4>
+          <div class="panel panel-default">
+            <h2 class="panel-title">Player 1</h2>
+            <div class="panel-body">
+              <div class="player1">
+                <button id="player1" type="submit" class="btn-primary">End Turn</button>
+                <h4>Score</h4><br>
+                <p><span id="score1"></p>
+              </div>
+            </div>
           </div>
-          
         </div>
         <div class="column-md-6">
-          <h2>Player 2</h2>
-          <div id="player2">
-            <button type="submit" class="btn-primary">End Turn</button>
+          <div class="panel panel-default">
+              <h2 class="panel-title">Player 2</h2>
+              <div class="panel-body">
+            <div class="player2">
+            <button id="player2" type="submit" class="btn-primary">End Turn</button>
+            <h4>Score</h4><br>
+            <p><span id="score2"></p>
           </div>
         </div>
+        </div>
+        </div>
       </div>
+  </div>
   </body>
 </html>
