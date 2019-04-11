@@ -1,7 +1,49 @@
-.jumbotron {
+body {
+  margin: 30px;
+  padding: 30px;
+
+}
+
+h2 {
+  border-style: dotted;
+}
+
+#roll-dice {
+  border-style: ridge;
+  padding: 50px;
+  background-color: lightblue;
+}
+
+
+.dice-output {
+
+  width: 60px;
+  height: 50px;
+  background-color: white;
+
+}
+
+.center {
   text-align: center;
-  }
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.players {
+  border-style: inset;
+  padding: 18%;
   
-  #roll-dice {
-    text-align: center;
-  }
+}
+#float1 {
+  float:left;
+  background-color: lightgreen;
+}
+#float2 {
+  float: right;
+  background-color: lightpink;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+}
